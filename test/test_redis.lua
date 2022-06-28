@@ -38,6 +38,13 @@ local function console_loop(_)
         return
     end
     local ok
+
+    ok, err = rds:auth("123456")
+    if not ok then
+        print("failed to auth: ", err)
+        return
+    end
+
     ok, err = rds:set("name", "zero voice")
     if not ok then
         print("failed to set name: ", err)

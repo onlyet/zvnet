@@ -10,7 +10,9 @@
         "lauxlib.h": "c",
         "inet.h": "c",
         "stdbool.h": "c",
-        "jemalloc.h": "c"
+        "jemalloc.h": "c",
+        "zvmalloc.h": "c",
+        "systime.h": "c"
     },
     "lua.targetVersion": "5.1",
     "Lua.diagnostics.globals": [
